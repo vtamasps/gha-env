@@ -38,4 +38,5 @@ jobs:
     steps:
       - name: Output information
         run: |        
-          echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
+          echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}" #ehhez nincs hozzáférés, ez üres lesz
+          echo "MONGODB_DB_NAME: $MONGODB_DB_NAME"
